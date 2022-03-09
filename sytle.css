@@ -1,15 +1,94 @@
-*{
+* {
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        outline: none;
+    }
+
+body{
+    overflow-x: hidden;
     padding: 0px;
+    margin: 2px;
+    margin-left: 0px;
+}
+.main-header.style-two .header-top {
+    position: relative;
+    background: ghostwhite;
+    padding: 0px 0px;
+    background-color: ghostwhite;
+    width: 100%;
+    padding: 0px;
+    
 }
 
-.a{
+
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     
+}
+.auto-container-top {
+    padding-left: 20px;
+    padding-right: 30px;
     
+}
+.top-left{
+    float: left;
+}
+.pull-left {
+    float: left;
+}
+
+ul,li{
+    list-style: none;
+    padding: 4px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 1px;
+    cursor: pointer;
+    float: left;
+    
+}
+
+ul {
+    
+   display: inline-block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    cursor: pointer;
+}
+
+ul:hover{
+   
+    cursor: pointer;
+}
+
+li .a:hover{
+      background-color: #f8952a;
+    color: orange;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pull-right {
+    float: right;
+}
+.logo{
+    padding: 0px;
     float: inline-start;
     position: relative;
+    padding-left: 40px;
 }
 
-.fa-list:before {
+.fa-list{
     content: "\f03a";
 }
 .fa-hand-holding {
@@ -33,12 +112,11 @@
     content: "\f042";
 }
 
-
 .fa-graduation-cap {
     content: "\f19d";
 }
 
-.b{
+.admission-helpline{
     
     border: 1ch;
     border-color: #da2c46;
@@ -58,7 +136,7 @@
     
 }
 
-.b :hover{
+.admission-helpline :hover{
     background-color: black;
     color: #000;
    
@@ -67,8 +145,9 @@
 .topnav {
     overflow: hidden;
     background-color: ghostwhite;
-    padding: 1px;
-    position: sticky;
+    padding: 8px;
+    position:sticky;
+    width: 100%;
     
   }
   
@@ -76,16 +155,17 @@
     float: left;
     color: black;
     text-align: center;
-    padding: 10px 14px;
+    padding: 10px 11px;
     padding-bottom: -4px;
-    margin-right:8px ;
+    margin-right:12px ;
     margin-left: 12px;
     text-decoration: none;
     font-size: 17px;
     text-align: center;
     max-width: 1170px;
     background: ghostwhite;
-    
+    position: sticky;
+   
   }
   
   .topnav a:hover {
@@ -93,17 +173,22 @@
     color: black;
   }
   
-  .d{
-    display: block;
-    margin-left: 100px;
-    margin-right: 100px;
-    width:50% ;
+  .img{
+    display: contents;
+    margin-left: 20px;
+    width:20%;
+    z-index: -3;
+    background: rgba(0, 0, 0, 0.7);
+    image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
     
     
   }
   
 .main{
-    padding: 50px;
+    padding: 0px;
+    display: contents;
 }
 
 .row{
@@ -113,3 +198,107 @@
     margin-left: -15px;
 }
 
+.container {
+    position: relative;
+    font-family: Arial;
+  }
+
+.text-block {
+    position: absolute;
+    top: 220px;
+    left: 140px;
+    background-color: transparent;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    font-size: 40px;
+    line-height: 70px;
+    
+  }
+
+  .theme-btn {
+    border-radius: 5px;
+    margin-right: 25px;
+    background: #f8952c;
+    align-items: center;
+}
+
+.theme-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Arimo', sans-serif;
+    color: #fff !important;
+    padding: 10px 38px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 500ms ease;
+}
+
+.theme-btn :hover{
+    
+    color: #da2c46;
+}
+
+.fixed-buttons-right2 {
+    bottom: 185px;
+    position: fixed;
+    right: 4px;
+    z-index: 100;
+}
+
+.flex-container{
+    display: flex;
+    width: 100px;
+    float: left;
+    justify-content: flex-start;
+    margin: 0 -5px;
+}
+
+.feature-block-one .inner-box .image-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.inner-box{
+    
+        width: 300px;
+        height: 50px;
+        margin: 10px 65px;
+      
+}
+
+
+.main-footer .footer-bottom {
+    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 13px 0px 16px;
+}
+.auto-container {
+    position: static;
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.main-footer {
+    position: absolute;
+    background: #0a1c2d;
+}
+.copyright{
+    color: #f8952a;
+}
+
+#footer{
+    position: absolute;
+    background-color: #000;
+    height: 100px;
+    margin-top: -100px;
+    
+}
